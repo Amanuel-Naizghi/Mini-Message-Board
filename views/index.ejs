@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+        <script src="./newMessage.js" defer></script>
+    </head>
+    <body>
+        <div class = "messages-container">
+            <h1 class="message-header">Message Board</h1>
+            <%info.map(data=>{ %>
+                <div class = "messages-content">
+                    <div class="user-name"><%= data.user %></div>
+                    <div class="text"><%= data.text %></div>
+                    <div class="date"><%= data.added %></div>
+                </div>
+            <%}) %>
+            <button class="send-message">💬 Send a message</button>
+        </div>  
+    </body>
+</html>
