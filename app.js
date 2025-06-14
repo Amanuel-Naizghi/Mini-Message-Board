@@ -1,15 +1,14 @@
 const express = require("express");
 const app = express();
 const path = require("node:path");
-const indexRoute = require('./routes/indexRoute');
-const newPageRoute = require('./routes/newRoute');
+const router = require('./routes/indexRoute');
 
-app.set("views", path.join(__dirname, "views"));
-app.set("view engine", "ejs");
-app.use(express.static('public'));
+app.set("views", path.join(__dirname, "views"));//Used for accessing views files the .ejs 
+app.set("view engine", "ejs");//Used for accessing views files the .ejs 
+app.use(express.static('public'));//Used for accessing public files like style.css
+app.use(express.urlencoded({extended:true}));//Used for accessing POST
 
-app.use('/',indexRoute);
-app.use('/new',newPageRoute);
+app.use('/',router);
 
 const PORT = 3000;
 app.listen(PORT, ()=>{

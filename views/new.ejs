@@ -1,5 +1,18 @@
 <html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+    </head>
     <body>
-        Hello am your create new message page.
+        <div class="new-message-container">
+            <h1 class="new-message-title"><%= title%></h1>
+            <form class="new-message-content" method="POST" action="/new">
+                <input class="name" type="text" placeholder="name" name="name" required>
+                <input class="message" type="text" placeholder="Message" name="message" required>
+                <div class="buttons">
+                    <button type="submit" class="send">Send Message</button>
+                    <a href="/" class="back-home">⬅️ Back home</a>
+                </div>
+            </form>
+        </div>
     </body>
 </html>
