@@ -1,19 +1,21 @@
 <html>
     <head>
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./css/index.css">
     </head>
     <body>
         <div class = "messages-container">
             <h1 class="message-header"><%=title%></h1>
-            <%info.map((data,index)=>{ %>
-                <div class = "messages-content">
-                    <div class="user-name"><%= data.user %></div>
-                    <div class="text"><%= data.text %></div>
-                    <div class="date"><%= data.added %></div>
-                    <a href="/item/<%=index%>">Open Message</a>
-                </div>
-            <%}) %>
-            <a href="/new" class="send-message">💬 Send a message</a>
+            <div class="messages-content-container">
+                <%info.map((data,index)=>{ %>
+                    <div class = "messages-content">
+                        <div class="user-name"><%= data.user %></div>
+                        <div class="text"><%= data.text %></div>
+                        <div class="date"><%= data.added %></div>
+                        <a class="open-message" href="/item/<%=index%>">Open Message</a>
+                    </div>
+                <%}) %>
+                <a href="/new" class="send-message">💬 Send a message</a>
+            </div>
         </div>  
     </body>
 </html>

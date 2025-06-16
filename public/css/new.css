@@ -1,0 +1,66 @@
+body{
+    background-color:#F5F0CD;
+}
+@font-face{
+    font-family:'font1';
+    src:url('../fonts/RubikVinyl-Regular.ttf')format('truetype');
+}
+@font-face{
+    font-family:'font2';
+    src:url('../fonts/myFont1.ttf')format('truetype');
+}
+@font-face{
+    font-family:'font3';
+    src:url('../fonts/italic.ttf')format('truetype');
+}
+.new-message-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.new-message-container h1{
+    font-family: 'font1';
+    font-size:1.8rem;
+}
+.new-message-container>.new-message-content{
+    background-color: #759fcb;
+    width: 400px;
+    display:flex;
+    flex-direction: column;
+    padding:1.5rem 1rem;
+    border-radius: 10px;
+}
+.new-message-container>.new-message-content>.name{
+    width:200px;
+    margin-bottom:0.5rem
+}
+.new-message-container>.new-message-content>.message{
+    width:400px;
+    height:70px;
+    resize:vertical;
+    margin-bottom: 0.5rem;
+}
+.new-message-container>.new-message-content .send{
+    background-color:aliceblue;
+    border-radius:10px;
+    padding:0.5rem;
+    text-decoration: none;
+    color:rgb(45, 45, 45);
+    background-color: #cfe1fd;
+    border:none;
+}
+.new-message-container>.new-message-content .send:hover{
+    background-color: #c9d6ec;
+}
+.new-message-container>.back-home{
+    text-decoration: none;
+    background-color: #1577e0;
+    border-radius: 10px;
+    padding:0.5rem;
+    align-self: center;
+    color:aliceblue;
+    margin-top:2rem;
+}
+.new-message-container>.back-home:hover{
+    background-color: #3786dc;
+}

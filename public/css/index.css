@@ -1,0 +1,77 @@
+body{
+    background-color:#F5F0CD;
+}
+@font-face{
+    font-family:'font1';
+    src:url('../fonts/RubikVinyl-Regular.ttf')format('truetype');
+}
+@font-face{
+    font-family:'font2';
+    src:url('../fonts/myFont1.ttf')format('truetype');
+}
+@font-face{
+    font-family:'font3';
+    src:url('../fonts/italic.ttf')format('truetype');
+}
+.messages-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.messages-container>.message-header{
+    font-family: 'font1';
+    font-size:2.2rem;
+}
+.messages-container>.messages-content-container{
+    background-color: #759fcb;
+    border-radius: 10px;
+    padding:2rem 1rem;
+    width:600px;
+    display:flex;
+    flex-direction:column;
+}
+.messages-content-container>.messages-content{
+    margin-bottom:1.2rem;
+    background-color: aliceblue;
+    padding:1rem;
+    border-radius: 10px;
+    display:flex;
+    flex-direction:column;
+}
+.messages-content-container>.messages-content>.user-name{
+    font-family:'font2';
+    font-size:1.2rem;
+    font-weight: 500;
+}
+.messages-content-container>.messages-content>.text{
+    font-family:'font3';
+    font-size:1rem;
+}
+.messages-content-container>.messages-content>.date{
+    font-family:'font2';
+    font-size:0.8rem;
+}
+.messages-content-container>.messages-content>.open-message{
+    text-decoration: none;
+    background-color: #1577e0;
+    border-radius: 10px;
+    padding:0.5rem;
+    align-self: center;
+    color:aliceblue;
+}
+.messages-content-container>.messages-content>.open-message:hover{
+    background-color: #3786dc;
+}
+.messages-container>.messages-content-container>.send-message{
+    align-self: center;
+    background-color:aliceblue;
+    border-radius:10px;
+    padding:0.5rem;
+    text-decoration: none;
+    color:rgb(45, 45, 45);
+    background-color: #cfe1fd;
+}
+.messages-container>.messages-content-container>.send-message:hover{
+    background-color: #c9d6ec;
+}

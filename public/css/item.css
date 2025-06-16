@@ -1,0 +1,63 @@
+body{
+    background-color:#F5F0CD;
+}
+@font-face{
+    font-family:'font1';
+    src:url('../fonts/RubikVinyl-Regular.ttf')format('truetype');
+}
+@font-face{
+    font-family:'font2';
+    src:url('../fonts/myFont1.ttf')format('truetype');
+}
+@font-face{
+    font-family:'font3';
+    src:url('../fonts/italic.ttf')format('truetype');
+}
+.my-message-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.my-message-container>h1{
+    font-family:'font1';
+    font-size:1.8rem;
+}
+.my-message-container>.my-message{
+    background-color: #759fcb;
+    border-radius: 10px;
+    padding:2rem 1rem;
+    width:600px;
+    margin-top:3rem;
+    color:aliceblue
+}
+.my-message-container>.my-message span{
+    font-size:1.5rem;
+    font-family:'font2';
+}
+.my-message-container>.my-message>.user-name{
+    font-family:'font2';
+    font-size:2rem;
+}
+.my-message-container>.my-message>.message{
+    font-family:'font3';
+    font-size:2rem;
+}
+.my-message-container>.my-message>.date{
+    font-size:1.2rem;
+}
+.my-message-container>.my-message>.date>span{
+    font-size:1rem;
+}
+.my-message-container>.back-home{
+    text-decoration: none;
+    background-color: #1577e0;
+    border-radius: 10px;
+    padding:0.5rem;
+    align-self: center;
+    color:aliceblue;
+    margin-top:2rem;
+}
+.my-message-container>.back-home:hover{
+    background-color: #3786dc;
+}

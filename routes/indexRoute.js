@@ -9,7 +9,7 @@ const messages = [
       added: format(new Date(),"MMMM d,yyyy 'at' h:mm a"),
     },
     {
-      text: "Hello World!",
+      text: "Hello World Contrary to popular belief, Lorem Ipsum is not simply random text.",
       user: "Charles",
       added: format(new Date(),"MMMM d,yyyy 'at' h:mm a"),
     }
@@ -26,7 +26,7 @@ router.get("/item/:id",(req,res)=>{
     const index=req.params.id;
     const item=messages[index];
     if(item){
-        res.render("item",{title:"Item Details",item:item});
+        res.render("item",{title:"Message Details",item:item});
     }else{
         res.status(404).send("Item not found");
     }
